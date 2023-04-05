@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import register from '../../assets/images/register.jpg'
 import '../../App.css'
 
 export default function SignUpPage() {
 
     return (
         <div className="text-center m-5-auto">
+            <img src = {register}/>
             <h2>Join us</h2>
             <h5>Create your personal account</h5>
             <form action="/home">
@@ -22,6 +23,18 @@ export default function SignUpPage() {
                     <label>Password</label><br/>
                     <input type="password" name="password" requiredc />
                 </p>
+                <p>
+                    <label>Select your gender</label><br/>
+                    <input type="radio"/>Male<br/>
+                    <input type="radio"/>Female<br/>
+                    <input type="radio"/>Other<br/>
+                </p>
+                <p>
+                <label>
+                    <input style={{width:"0 rem"}} type="checkbox"/>Save Password?
+                </label>
+                </p>
+                <br/>
                 <p>
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
                 </p>
