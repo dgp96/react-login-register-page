@@ -4,7 +4,7 @@ import register from '../../assets/images/register.jpg'
 import '../../App.css'
 
 export default function SignUpPage() {
-
+                                        
     return (
         <div className="text-center m-5-auto">
             <img src = {register}/>

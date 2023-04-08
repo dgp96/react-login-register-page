@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 
 import '../../App.css'
 import BackgroundImage from '../../assets/images/bg.png'
-import welcome from '../../assets/images/welcome.jpg'
+
 
 export default function LandingPage() {
     const locations = ["San Fransisco","Seattle","New York"];
-    const locationElement = locations.map(loc=><li>{loc}</li>)
+    const locationElement = locations.map(loc=><li><label>{loc}</label></li>)
     return (
         
         <header style={ HeaderStyle }>
-            <img src = {welcome}  />
+            {/*<img src = {welcome}  />*/}
             <h1 className="main-title text-center">login / register page</h1>
             <p className="main-para text-center">join us now and don't waste time</p>
             <div style = {{textAlign: "center"}}>

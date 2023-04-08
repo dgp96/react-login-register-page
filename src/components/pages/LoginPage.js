@@ -19,13 +19,13 @@ export default function SignInPage() {
                     <br/>
                     <input type="password" name="password" required />
                 </p>
-                
+
                 <p>
                 <label>
                     <span><input type="checkbox"/>Keep me logged in</span>
                 </label>
                 </p>
-
+                
                 <p>
                 <label>
                     <span><input style={{width:"0 rem"}} type="checkbox"/>Accept Cookies</span>
@@ -37,6 +37,10 @@ export default function SignInPage() {
                     <span><input style={{width:"0 rem"}} type="checkbox"/>Save Password?</span>
                 </label>
                 </p>
+
+               
+
+                
                 
                 <p>
                     <button id="sub_btn" type="submit">Login</button>
